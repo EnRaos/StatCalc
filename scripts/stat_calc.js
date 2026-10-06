@@ -139,8 +139,12 @@ function countCharSp(lvl){
 		if((i % 5) == 0){
 			spBon += 1;
 			if (i>=90){spBon += 1}
+			if (i>=100){spBon += 1}
 		}
-		sp += (3+spBon);
+		if(i==130){sp += 80}
+		else {
+			sp += (3+spBon);
+		}
 	}
 	return sp;
 }	
